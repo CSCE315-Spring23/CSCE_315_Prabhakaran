@@ -2,62 +2,85 @@
 <html>
 <head>
     <title>Sid Prabhakaran</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
+    <script>
+        function toggleStyleSheet() {
+            var currentStyleSheet = document.getElementById("mainStyleSheet").getAttribute("href");
+            if (currentStyleSheet == "style1.css") {
+                document.getElementById("mainStyleSheet").setAttribute("href", "style2.css");
+            } else {
+                document.getElementById("mainStyleSheet").setAttribute("href", "style1.css");
+            }
+        }
+    </script>
     <nav class="topnav">
         <ul>
             <li><a href="index.html">
                 <img src="media/house-solid.svg">
             </a></li>
-            <li><a class="active" href="portfolio.html" href="portfolio.html">
+            <li><a class="active" href="portfolio.html">
                 <p>Portfolio</p>
             </a></li>
-            <li><a href="qualifications.html" href="qualifications.html">
+            <li><a href="qualifications.html">
                 <p>Qualifications</p>
             </a></li>
-            <li><a href="service.html" href="service.html">
+            <li><a href="service.html">
                 <p>Service</p>
             </a></li>
+            <li><a href="chatgpt.html">
+                <p>ChatGPT Page</p>
+            </a></li>
+            <li><a onclick="toggleStyleSheet()">
+                <p>Toggle Theme</p>
+            </li>
         </ul>
     </nav>
 
     <main>
         <h1>My Portfolio</h1>
-        <!-- Add your portfolio items here -->
-        <div class="portfolio-right">
-            <img src="media/project1.jpg" alt="Project 1">
+        <div class="staggered-list" style="border-top: #012A4A 2px solid;">
+            <img src="media/p41plus.jpg" alt="P41 Plus SSD">
             <div style="margin: 1%">
-            <h3>BattleBots</h3>
+            <h3>Solidigm Technology - Product Development Intern</h3>
             <ul>
-                <li>Drafted electrical diagrams, designed custom sensor PCBs using Altium, and developed brushless motor 
-                    control software (C++) under the open-source VESC project.
-                </li>
-                <li>Lead Team Riptide as the chief of electronics and embedded systems during the 2021 and 2022 seasons 
-                    of Discovery Channel’s TV Show Battlebots.
-                </li>
-                <li>Placed within the Top 8 of all heavyweight combat robots worldwide, awarded “Rookie of the Year”
-                    for unprecedented success in first ever competitive season.
-                </li>
+                <li>Received Op-x Recognition Award for outstanding execution in developing a tool used to study SSD access patterns.</li>
+                <li>Designed proof-of-concepts and firmware policies for next-gen solid-state storage drives.</li>
+                <li>Created Python scripts used to determine data-driven power and performance targets for future drives.</li>
+                <li>Developed internal tool to simulate power consumption of storage drives under various workloads.</li>
+                <li>Collected performance data to validate marketing material for the <a href="https://www.solidigm.com/us/en/products/client/d6/p41.html">Solidigm P41 Plus SSD</a>.</li>
             </ul>
             </div>
         </div>
-        <div class="portfolio-left">
-            <div style="margin: 1%;">
-            <h3>Texas A&M Robomasters</h3>
+        <div class="staggered-list">
+            <div style="margin: 1%">
+            <h3>BattleBots Team Riptide - Electronics/Embedded Systems Lead</h3>
             <ul>
                 <li>Drafted electrical diagrams, designed custom sensor PCBs using Altium, and developed brushless motor 
-                    control software (C++) under the open-source VESC project.
+                    control software (C++) under the <a href="https://github.com/vedderb/bldc">open-source VESC project</a>.
                 </li>
-                <li>Lead Team Riptide as the chief of electronics and embedded systems during the 2021 and 2022 seasons 
-                    of Discovery Channel’s TV Show Battlebots.
+                <li>Lead <a href="https://battlebots.com/robot/riptide-wcvii/">Team Riptide</a> as the chief of electronics and embedded systems during the 2021 and 2022 seasons 
+                    of Discovery Channel’s TV Show BattleBots.
                 </li>
                 <li>Placed within the Top 8 of all heavyweight combat robots worldwide, awarded “Rookie of the Year”
                     for unprecedented success in first ever competitive season.
                 </li>
             </ul>
             </div>
-            <img src="media/project2.jpg" alt="Project 2">
+            <img src="media/bb2021-ep613-uppercut-vs-riptide-_dsc0775-2-39-spoiler-photographer-jon-c-r-bennett.jpg" alt="Battlebots">
+        </div>
+        <div class="staggered-list">
+            <img src="media/robomasters.jpg" alt="Robomasters">
+            <div style="margin: 1%;">
+            <h3>Texas A&M Robomasters - Software Project Manager</h3>
+            <ul>
+                <li><a href="https://github.com/TAMU-Robomasters/aimbots-dev">Led development of FreeRTOS implementation</a> and control systems on STM32 platform across 10 of Texas A&M’s robots at the DJI Robomaster World Championships.</li>
+                <li>Implemented custom UART communication protocol between NVIDIA Jetson and STM32-based microcontroller.</li>
+                <li>Designed patrol, target selection, and combat algorithms for fully-autonomous Sentry robot.</li>
+                <li>Managed team's finances, recruiting, and task delegation.</li>
+            </ul>
+            </div>
         </div>
         <!-- Add more portfolio items here if needed -->
     </main>

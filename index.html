@@ -2,29 +2,48 @@
 <html>
 <head>
     <title>Sid Prabhakaran</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
+    <script>
+        function toggleStyleSheet() {
+            var currentStyleSheet = document.getElementById("mainStyleSheet").getAttribute("href");
+            if (currentStyleSheet == "style1.css") {
+                document.getElementById("mainStyleSheet").setAttribute("href", "style2.css");
+            } else {
+                document.getElementById("mainStyleSheet").setAttribute("href", "style1.css");
+            }
+        }
+    </script>
     <nav class="topnav">
         <ul>
             <li><a class="active" href="index.html">
                 <img src="media/house-solid.svg">
             </a></li>
-            <li><a href="portfolio.html" href="portfolio.html">
+            <li><a href="portfolio.html">
                 <p>Portfolio</p>
             </a></li>
-            <li><a href="qualifications.html" href="qualifications.html">
+            <li><a href="qualifications.html">
                 <p>Qualifications</p>
             </a></li>
-            <li><a href="service.html" href="service.html">
+            <li><a href="service.html">
                 <p>Service</p>
             </a></li>
+            <li><a href="chatgpt.html">
+                <p>ChatGPT Page</p>
+            </a></li>
+            <li><a onclick="toggleStyleSheet()">
+                <p>Toggle Theme</p>
+            </li>
         </ul>
     </nav>
 
-    <header>
+    <div class="landing-content">
         <img src="media/profile.jpg" alt="Profile Photo" class="center">
-        <h1><center>Sid Prabhakaran</center></h1>
+        <h1>Sid Prabhakaran</h1>
+        <!-- <p>Fueled by a passion for robotics and a love of coding, I bring my unique combination of technical and creative skills to everything I do.</p> -->
+            
+        <p>Check out my GitHub and YouTube to see what I'm working on!</p>
         <div class="horiz">
             <a class="icon_button" href="https://github.com/bid-p">
                 <img src="media/github.svg">
@@ -37,12 +56,10 @@
                 <img src="media/youtube.svg">
             </a>
         </div>
-    </header>
+    </div>
 
 
-    <!-- <main>
-        <h2>About Me</h2>
-        <p>A little bit about myself and my interests, experience, etc.</p>
-    </main> -->
+    <main>
+    </main>
 </body>
 </html>

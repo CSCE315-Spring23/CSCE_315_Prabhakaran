@@ -2,28 +2,79 @@
 <html>
 <head>
     <title>Sid Prabhakaran</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
+    <script>
+        function toggleStyleSheet() {
+            var currentStyleSheet = document.getElementById("mainStyleSheet").getAttribute("href");
+            if (currentStyleSheet == "style1.css") {
+                document.getElementById("mainStyleSheet").setAttribute("href", "style2.css");
+            } else {
+                document.getElementById("mainStyleSheet").setAttribute("href", "style1.css");
+            }
+        }
+    </script>
     <nav class="topnav">
         <ul>
             <li><a href="index.html">
                 <img src="media/house-solid.svg">
             </a></li>
-            <li><a href="portfolio.html" href="portfolio.html">
+            <li><a href="portfolio.html">
                 <p>Portfolio</p>
             </a></li>
-            <li><a class="active" href="qualifications.html" href="qualifications.html">
+            <li><a class="active" href="qualifications.html">
                 <p>Qualifications</p>
             </a></li>
-            <li><a href="service.html" href="service.html">
+            <li><a href="service.html">
                 <p>Service</p>
             </a></li>
+            <li><a href="chatgpt.html">
+                <p>ChatGPT Page</p>
+            </a></li>
+            <li><a onclick="toggleStyleSheet()">
+                <p>Toggle Theme</p>
+            </li>
         </ul>
     </nav>
+    
 
     <main>
-        <h1>Qualifications</h2>
-        <p>My qualifications and experience.</p>
+        <h1>Technical Skills and Qualifications</h2>
+        
+        <p style="font-size:larger; text-align: justify; margin: 3%;">
+            As a high school student, my first encounter with the world of robotics was the VEX Robotics Competition, and participating in it was an eye-opening experience that diverted my career path into software engineering. I was fascinated by the dynamic between hardware and software development, and was immediately drawn towards the field of Embedded Systems.
+        </p>
+        <p style="font-size:larger; text-align: justify; margin: 3%;">
+            What I love about Embedded Systems is the blend of hardware and software components that allows our projects to interact with the real world. This interplay between the two is what makes Embedded Systems so fascinating to me and presents a unique challenge to effectively use both hardware and software to create a functional system. Using microcontrollers, sensors, and motors as a bridge between the real and digital worlds presents an interesting challenge for me. The versatility of Embedded Systems projects are truly impressive to me, as they play a crucial role in shaping the world we live in, from GPS networks, to assembly robots, to medical devices. The ability to develop systems that can so directly benefit people's lives is inspiring to me.
+        </p>
+        <p style="font-size:larger; text-align: justify; margin: 3%;">
+            I've been actively developing my skills in this field through various programming and robotics courses, as well as participating in robotics competitions, including our University's RoboMaster competitions and competing in the TV Show BattleBots. I'm eager to continue my education and gain more experience in the field of Embedded Systems, and with the right knowledge and experience, I'm confident that I can make a meaningful impact in this field. With my strong foundation in programming, and my passion for robotics, I'm confident that my unique combination of technial and creative skills will make me a valuable asset on any team. 
+
+            Overall, my passion for robotics and Embedded Systems drives me to continue exploring this field and work towards a career in which I can use my skills and knowledge to create solutions that can improve people's lives.
+        </p>
+
+        <div class="horiz" style="height: 1000px;">
+            <div class="skill-bubble-container">
+                <div class="skill-bubble cpp" data-years="5">C++</div>
+                <div class="skill-bubble python" data-years="4">Python</div>
+                <div class="skill-bubble googling" data-years="8">Googling</div>
+                <div class="skill-bubble git" data-years="5">Git</div>
+                <div class="skill-bubble rtos" data-years="4">RTOS</div>
+                <div class="skill-bubble armv8" data-years="3">ARMv8</div>
+                <div class="skill-bubble verilog" data-years="2">Verilog</div>
+                <div class="skill-bubble js" data-years="1">JS</div>
+                <div class="skill-bubble pcb" data-years="2">PCB Design</div>
+                <div class="skill-bubble java" data-years="1">Java</div>
+                <div class="skill-bubble c" data-years="3">C</div>
+                <div class="skill-bubble html" data-years="1">HTML</div>
+            </div>
+
+            <div class="resume">
+                <iframe src="media/sidResume.pdf"></iframe>
+            </div>
+
+        </div>
+
     </main>
 </html>

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.topnav ul{
+    list-style-type: none;
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 1%;
+}
+
+.topnav li {
+    margin: 0% 25px;
+    padding: 0% 0%;
+    align-self: center;
+}
+
+.topnav a {
+    text-decoration: none;
+    color:  #012A4A;
+}
+
+.topnav img{
+    filter: invert(13%) sepia(75%) saturate(1235%) hue-rotate(177deg) brightness(90%) contrast(101%);
+    width: 25px;
+    height: 25px;
+}
+
+.topnav a:hover {
+    font-weight: bold;
+}
+
+.topnav a.active {
+    /* background-color: #486e90; */
+    font-weight: bold;
+}
+
+.landing-content {
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    font-size: larger;
+}
+
+.landing-content img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border-color: #012A4A;
+    border: 5px solid;
+}
+
+.landing-content p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.horiz, .horiz p, .horiz a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:  #012A4A;
+    margin: 0% 0%;
+}
+
+main p{
+    font-size: larger;
+}
+
+.horiz a{
+    margin: 0% 1%;
+}
+
+.icon_button {
+    background-color: #012A4A;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.icon_button img {
+    width: 40px;
+    height: 40px;
+    object-fit: scale-down;
+    border-radius: 0%;
+    border: 0px;
+    /* filter svg inner color to #d2e9f1 */
+    filter: invert(94%) sepia(12%) saturate(613%) hue-rotate(165deg) brightness(99%) contrast(91%);
+}
+
+/* !PORTFOLIO */
+
+.staggered-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-bottom: #012A4A 2px solid;
+    /* border-top: #012A4A 1px solid; */
+}
+
+.staggered-list img {
+    object-fit: cover;
+    width: 350px;
+    height: 40%;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+.staggered-list h3{
+    text-align: center;
+    font-size: x-large;
+}
+
+/* !QUALIFICATIONS */
+.skill-bubble-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.skill-bubble{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #012A4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d2e9f1;
+    /* margin: 10px; */
+}
+
+[data-years="1"] {
+    width: 50px;
+    height: 50px;
+    font-size: 16px
+}
+
+[data-years="2"] {
+    width: 75px;
+    height: 75px;
+    font-size: 18px
+}
+
+[data-years="3"] {
+    width: 100px;
+    height: 100px;
+    font-size: 20px
+}
+
+[data-years="4"] {
+    width: 125px;
+    height: 125px;
+    font-size: 22px
+}
+
+[data-years="5"] {
+    width: 150px;
+    height: 150px;
+    font-size: 24px
+}
+
+[data-years="6"] {
+    width: 175px;
+    height: 175px;
+    font-size: 26px
+}
+
+[data-years="7"] {
+    width: 200px;
+    height: 200px;
+    font-size: 28px
+}
+
+[data-years="8"] {
+    width: 225px;
+    height: 225px;
+    font-size: 30px
+}
+
+/* .googling {
+    top: 150px;
+    left: 175px;
+}
+
+.cpp {
+    top: 300px;
+    left: 638px;
+}
+
+.js {
+    top: 365px;
+    left: -361px;
+}
+
+.pcb {
+    top: 375px;
+    left: -482px;
+}
+
+.rtos {
+    top: 339px;
+    left: -257px;
+}
+
+.git {
+    top: 214px;
+    left: -198px;
+}
+
+.armv8 {
+    top: 124px;
+    left: -399px;
+}
+
+.java {
+    top: 118px;
+    left: -606px;
+}
+
+.python {
+    top: 25px;
+    left: 349px;
+}
+
+.verilog {
+    top: 101px;
+    left: -265px;
+}
+
+.c {
+    top: 149px;
+    left: -463px;
+} 
+
+.html {
+    width: 53px;
+    height: 53px;
+    top: 248px;
+    left: -551px;
+} */
+
+.resume {
+    width: 50%;
+    height: 100%;
+}
+
+.resume iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* !SERVICE */
+
+body{
+    background-color: #d2e9f1;
+    text-align: center;
+    color:  #012A4A;
+    font-size: large;
+    font-family: "Roboto";
+}
+/* https://coolors.co/palette/3e92cc-2a628f-13293d-16324f-18435a */
+/* https://coolors.co/palette/012a4a-013a63-01497c-014f86-2a6f97-2c7da0-468faf-61a5c2-89c2d9-a9d6e5 */
+/* https://mdigi.tools/color-shades/#a9d6e5 */

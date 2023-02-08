@@ -2,28 +2,82 @@
 <html>
 <head>
     <title>Sid Prabhakaran</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
+    <script>
+        function toggleStyleSheet() {
+            var currentStyleSheet = document.getElementById("mainStyleSheet").getAttribute("href");
+            if (currentStyleSheet == "style1.css") {
+                document.getElementById("mainStyleSheet").setAttribute("href", "style2.css");
+            } else {
+                document.getElementById("mainStyleSheet").setAttribute("href", "style1.css");
+            }
+        }
+    </script>
     <nav class="topnav">
         <ul>
             <li><a href="index.html">
                 <img src="media/house-solid.svg">
             </a></li>
-            <li><a href="portfolio.html" href="portfolio.html">
+            <li><a href="portfolio.html">
                 <p>Portfolio</p>
             </a></li>
-            <li><a href="qualifications.html" href="qualifications.html">
+            <li><a href="qualifications.html">
                 <p>Qualifications</p>
             </a></li>
-            <li><a class="active" href="service.html" href="service.html">
+            <li><a class="active" href="service.html">
                 <p>Service</p>
             </a></li>
+            <li><a href="chatgpt.html">
+                <p>ChatGPT Page</p>
+            </a></li>
+            <li><a onclick="toggleStyleSheet()">
+                <p>Toggle Theme</p>
+            </li>
         </ul>
     </nav>
 
     <main>
         <h1>Service</h2>
-        <p>My service.</p>
+        <div class="staggered-list" style="border-top: #012A4A 2px solid;">
+            <img src="media/lifescout.jpg" alt="Life Scout Badge">
+            <div style="margin: 1%">
+            <h3>Boy Scouts of America (Troop 621) - Life Scout</h3>
+            <ul>
+                <li>Was involved with projects including organizing food drives, cleaning up local parks, and assisting with community events.</li>
+                <li>Managed and made decisions on behalf of 12 other scouts during weekly meetings and monthly “outings”.</li>
+                <li>Actively resolved conflicts and consulted with other troop officials to learn better patrol management strategies.</li>
+            </div>
+        </div>
+        <div class="staggered-list">
+            <div style="margin: 1%">
+            <h3>DVHS Science Alliance - Student Mentor</h3>
+            <ul>
+                <li>Coached multiple 5th grade students through the process of developing and experimenting their own 
+                    research question.                    
+                </li>
+                <li>Students received numerous awards for their work, including two 3rd place awards, a 2nd place award, 
+                    and the District Award for Environmental Science.                    
+                </li>
+            </ul>
+            </div>
+            <img src="media/sciencealliance.jpg" alt="Science Alliance">
+        </div>
+        <div class="staggered-list">
+            <img src="media/cata.png" alt="California Tamil Academy Badge">
+            <div style="margin: 1%;">
+            <h3>California Tamil Academy - Teaching Assistant</h3>
+            <ul>
+                <li>Volunteered 2-3 hours every weekend teaching foreign language (Tamil) to elementary and middle 
+                    school students.
+                </li>
+                <li>Developed and implemented new teaching strategies to increase student engagement and retention.</li>
+                <li>Assisted in organizing and running annual cultural events.</li>
+            </ul>
+            </div>
+        </div>
     </main>
+
+</body>
 </html>
