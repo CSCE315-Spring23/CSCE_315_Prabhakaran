@@ -9,6 +9,7 @@
     padding-left: 1%;
     float: left;
     height: 100%;
+    /* position: fixed; */
 }
 
 .topnav li {
