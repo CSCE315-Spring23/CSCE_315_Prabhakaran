@@ -54,11 +54,6 @@
     border: 5px solid;
 }
 
-.landing-content p{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
 .horiz, .horiz p, .horiz a {
     display: flex;
     justify-content: center;
